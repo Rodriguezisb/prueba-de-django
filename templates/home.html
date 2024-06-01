@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Holo</h1>
+    <h1>Hola</h1>
+
+    {% for post in post_list%}
+        <h2>{{post.title}}</h2>
+        <p>{{post.body}}</p>
+        <hr>
+    {% endfor %}
+
+
 </body>
 </html>
